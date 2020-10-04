@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         tvLatitude = findViewById(R.id.tvLatitude);
         tvLongitude = findViewById(R.id.tvLongitude);
         tvCountry = findViewById(R.id.tvCountry);
-        tvLocality = findViewById(R.id.tvLocality);
         tvAddress = findViewById(R.id.tvAddress);
         btnLocation = findViewById(R.id.btn_location);
         btCheckNetwork = findViewById(R.id.btCheckNetwork);
@@ -108,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
                         tvLongitude.setText(Html.fromHtml("<font color = '#6200EE'><b>Longitude :</b><br></font>" + addresses.get(0).getLongitude()));
                         tvAddress.setText(Html.fromHtml("<font color = '#6200EE'><b>Address :</b><br></font>" + addresses.get(0).getAddressLine(0)));
                         tvCountry.setText(Html.fromHtml("<font color = '#6200EE'><b>Country :</b><br></font>" + addresses.get(0).getCountryName()));
-                        tvLocality.setText(Html.fromHtml("<font color = '#6200EE'><b>Locality :</b><br></font>" + addresses.get(0).getLocality()));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

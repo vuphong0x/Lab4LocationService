@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:padding="16dp">
 
     <Button
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Longitude"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:textSize="24sp" />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Latitude"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:textSize="24sp" />
 
         <TextView
@@ -43,22 +43,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Country"
-            android:layout_margin="16dp"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/tvLocality"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Locality"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:text="Address"
             android:textSize="24sp" />
     </LinearLayout>
